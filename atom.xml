@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>阿飞的博客</title>
+  <title>Hexo</title>
   
-  <subtitle>比完美更重要的是完成</subtitle>
+  
   <link href="https://theme-next.js.org/atom.xml" rel="self"/>
   
   <link href="https://theme-next.js.org/"/>
@@ -10,7 +10,7 @@
   <id>https://theme-next.js.org/</id>
   
   <author>
-    <name>阿飞</name>
+    <name>John Doe</name>
     
   </author>
   
