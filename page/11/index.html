@@ -91,7 +91,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>首页</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-plugins"><a href="/plugins/" rel="section"><i class="fa fa-flask fa-fw"></i>Plugins</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">82</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">0</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">0</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>首页</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-plugins"><a href="/plugins/" rel="section"><i class="fa fa-flask fa-fw"></i>Plugins</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">84</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">0</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -156,9 +156,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">82</span>
+          <span class="site-state-item-count">84</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
 </div>
@@ -206,7 +211,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-8-1-0-released/">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2021/02/next-8-2-1-released/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -224,7 +229,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/next-8-1-0-released/" class="post-title-link" itemprop="url">NexT 8.1.0 Released</a>
+          <a href="/2021/02/next-8-2-1-released/" class="post-title-link" itemprop="url">NexT 8.2.1 Released</a>
         </h2>
 
         <div class="post-meta-container">
@@ -235,7 +240,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2020-12-01 02:08:21" itemprop="dateCreated datePublished" datetime="2020-12-01T02:08:21Z">2020-12-01</time>
+      <time title="创建时间：2021-02-01 01:00:59 01:00:59" itemprop="dateCreated datePublished" datetime="2021-02-01T01:00:59Z">2021-02-01 01:00:59</time>
     </span>
 
   
@@ -247,8 +252,230 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/next-8-1-0-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-8-1-0-released/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2021/02/next-8-2-1-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/02/next-8-2-1-released/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
+<li>Explicitly use HTTPS for Vendors (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTg3">#187<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Use correct language codes in multi-language sites (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTcw">#170<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h2><ul>
+<li>Update dependency husky to v4.3.8 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTc1">#175<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dependency js-yaml to v4 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTcy">#172<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dependency eslint to v7.19.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTY5">#169<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<hr>
+<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjguMi4wLi4udjguMi4x">comparison between v8.2.0 and v8.2.1<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC4yLjE=">Detailed changes for NexT v8.2.1<i class="fa fa-external-link-alt"></i></span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2021/01/next-8-2-0-released/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="阿飞">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿飞的博客">
+      <meta itemprop="description" content="Talk is cheap. Show me the code.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 阿飞的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/01/next-8-2-0-released/" class="post-title-link" itemprop="url">NexT 8.2.0 Released</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-01-01 02:10:00 02:10:00" itemprop="dateCreated datePublished" datetime="2021-01-01T02:10:00Z">2021-01-01 02:10:00</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2021/01/next-8-2-0-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/01/next-8-2-0-released/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><ul>
+<li>Remove Valine (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC82Yzk0Y2ZiNDVmZDg5NThjNzhlMzUzMmIzMmVmZGZiMDNlZmFmYzU0">6c94cfb<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Use Hexo integrated nunjucks renderer (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC81ODlmYzg3MjFlNWE4ZWM1MWVhYmZlZTExNWY2MDZkYTkyNWUwODQ5">589fc87<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Remove swiftype (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9mMWFhMDk4NzczNjBmOWUyYTllNDcxYjQxYmFjMjJjMzQ5MzZjOGRk">f1aa098<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# Swiftype Search API Key</span></span><br><span class="line"><span class="deletion">-swiftype_key:</span></span><br></pre></td></tr></table></figure></li>
+<li>Remove baidu_push and disable_baidu_transformation (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9kNjViMDNjM2UxMzRkNDIyZmY3MTU2OTk1ZjY4MDdjNzI1ODRkZDEy">d65b03c<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# Disable Baidu transformation on mobile devices.</span></span><br><span class="line"><span class="deletion">-disable_baidu_transformation: false</span></span><br><span class="line"></span><br><span class="line"><span class="deletion">-# Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.</span></span><br><span class="line"><span class="deletion">-baidu_push: false</span></span><br></pre></td></tr></table></figure></li>
+<li>Remove cnzz (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8xZGQxYzcxZmRkZTYxZThhZjdlYWViMTUzZDUxYTE1MDY1ODE0MDhk">1dd1c71<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# CNZZ count</span></span><br><span class="line"><span class="deletion">-cnzz_siteid:</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="🌟-New-Features"><a href="#🌟-New-Features" class="headerlink" title="🌟 New Features"></a>🌟 New Features</h2><ul>
+<li>Support Cloudflare Web Analytics (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8xMmE3MzI4ZjNmMWUxMTNmNWVlODY0ZGJmNGEyNjExNmQ0ODZkZWQ3">12a7328<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+# Cloudflare Web Analytics</span></span><br><span class="line"><span class="addition">+# See: https://www.cloudflare.com/web-analytics/</span></span><br><span class="line"><span class="addition">+cloudflare_analytics:</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h2><ul>
+<li>New option mathjax.tags (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9mZjNiOTU3MWMwNzc5YzBiYTU4M2VlNjUwYzZmYTY0N2UzZjZmZWY4">ff3b957<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">math:</span><br><span class="line">  ...</span><br><span class="line">  mathjax:</span><br><span class="line">    enable: false</span><br><span class="line"><span class="addition">+    # Available values: none | ams | all</span></span><br><span class="line"><span class="addition">+    tags: none</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
+<li>Fix not loading disqusjs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTUw">#150<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
+<li>Code style update (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8yMDAwMmYyZDJhNzU3ZGY1ZmNjMjZjMzU1N2YwMDgwZmY3ODhlYWFm">20002f2<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fix redundant values in shorthand properties (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8zN2FjOGRhYzlmZTc5NDQzMTI3YTVkODk5YWVjYWFmMDllNjdiMTE3">37ac8da<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Remove the style of span.exturl (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC84YjNjZDgyYzBkNTM1OTViOTIzMGE2MTBiNDVhMDg4NGQ3MzZhZmFh">8b3cd82<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Refactor getQueryParameters (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9lNjI3YmNiMmNiY2RkZmM5NjlmNWJhODAwN2UyZjEwYWRlOWFlNzli">e627bcb<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fix illegal character in query (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9kM2RjNzkxMTQ1ZDRhOGMyNjY1ZmQyNmM5YjE2NzI5NjM0MTBkMTdi">d3dc791<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Set <code>role=&quot;button&quot;</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9iOTljN2NiZGI0NmEzMmRmNjI0OTZhNDNmYjRmMjU3NTRlMmZiMGYz">b99c7cb<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Simplify the <code>.comments</code> element (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9kNmY3YzUxZjZjMTM4ODI5ODZiMWY1MWEyZjY3M2FhODliYmQ2ZDI1">d6f7c51<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h2><ul>
+<li>Migrate from probot&#x2F;stale to GitHub Actions (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC82OGZiMTk4ZGNkZWIyYWMzM2MzMTZkOTAxZDk1YzZlMzQ4MjJkZTRj">68fb198<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dependency eslint to v7.16.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTUy">#152<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dependency husky to v4.3.6 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTU1">#155<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dependency js-yaml to v3.14.1 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTU2">#156<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dependency @next-theme&#x2F;eslint-config to v0.0.2 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTU5">#159<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update actions&#x2F;setup-node action to v2 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTYx">#161<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update dependency hexo to v5.3.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTYz">#163<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Bump peaceiris&#x2F;actions-label-commenter to 1.9.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTY1">#165<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="📖-Documentation"><a href="#📖-Documentation" class="headerlink" title="📖 Documentation"></a>📖 Documentation</h2><ul>
+<li>Update docs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC84ZjU2ZTM1ZjQ0ZjQyNTcyYzUzNmRlY2RlZTk1ODdlODE0NDc4YjZj">8f56e35<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update docs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9jZTA1NjljZmEzYzg2ZTBlM2UwYWRkNDY5OTM0YTJmNzUwMzE4NTFh">ce0569c<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update docs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC81ZTg4NzZkNTc3OWU3YmUzNTczOGI0N2VlZWIzMDVjMGQ3MWRiMmY2">5e8876d<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="🌍-Localization"><a href="#🌍-Localization" class="headerlink" title="🌍 Localization"></a>🌍 Localization</h2><ul>
+<li>New Crowdin updates (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTYw">#160<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<hr>
+<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjguMS4wLi4udjguMi4w">comparison between v8.1.0 and v8.2.0<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC4yLjA=">Detailed changes for NexT v8.2.0<i class="fa fa-external-link-alt"></i></span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2020/12/next-8-1-0-released/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="阿飞">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿飞的博客">
+      <meta itemprop="description" content="Talk is cheap. Show me the code.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 阿飞的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/12/next-8-1-0-released/" class="post-title-link" itemprop="url">NexT 8.1.0 Released</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-12-01 02:08:21 02:08:21" itemprop="dateCreated datePublished" datetime="2020-12-01T02:08:21Z">2020-12-01 02:08:21</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/12/next-8-1-0-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/12/next-8-1-0-released/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -325,7 +552,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-8-0-2-released/">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2020/11/next-8-0-2-released/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -343,7 +570,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/next-8-0-2-released/" class="post-title-link" itemprop="url">NexT 8.0.2 Released</a>
+          <a href="/2020/11/next-8-0-2-released/" class="post-title-link" itemprop="url">NexT 8.0.2 Released</a>
         </h2>
 
         <div class="post-meta-container">
@@ -354,7 +581,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2020-11-01 02:46:04" itemprop="dateCreated datePublished" datetime="2020-11-01T02:46:04Z">2020-11-01</time>
+      <time title="创建时间：2020-11-01 02:46:04 02:46:04" itemprop="dateCreated datePublished" datetime="2020-11-01T02:46:04Z">2020-11-01 02:46:04</time>
     </span>
 
   
@@ -366,8 +593,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/next-8-0-2-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-8-0-2-released/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2020/11/next-8-0-2-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/11/next-8-0-2-released/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -401,245 +628,6 @@
 <hr>
 <p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjguMC4xLi4udjguMC4y">comparison between v8.0.1 and v8.0.2<i class="fa fa-external-link-alt"></i></span></p>
 <p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC4wLjI=">Detailed changes for NexT v8.0.2<i class="fa fa-external-link-alt"></i></span></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-8-0-1-released/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="阿飞">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阿飞的博客">
-      <meta itemprop="description" content="Talk is cheap. Show me the code.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 阿飞的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/next-8-0-1-released/" class="post-title-link" itemprop="url">NexT 8.0.1 Released</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2020-10-01 03:10:53" itemprop="dateCreated datePublished" datetime="2020-10-01T03:10:53Z">2020-10-01</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/next-8-0-1-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-8-0-1-released/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="🌟-New-Features"><a href="#🌟-New-Features" class="headerlink" title="🌟 New Features"></a>🌟 New Features</h2><ul>
-<li>Add NProgress (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNzk=">#79<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+# Progress bar in the top during page loading.</span></span><br><span class="line"><span class="addition">+# For more information: https://github.com/rstacruz/nprogress</span></span><br><span class="line"><span class="addition">+nprogress:</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"><span class="addition">+  spinner: true</span></span><br><span class="line"></span><br><span class="line">vendors:</span><br><span class="line">  ...</span><br><span class="line"><span class="addition">+  # NProgress.js</span></span><br><span class="line"><span class="addition">+  nprogress_js:</span></span><br><span class="line"><span class="addition">+  nprogress_css:</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h2><ul>
-<li>Support cdnjs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC85NmM2OGE5MzIxMTA4OGVjNTBhYjFjMzI0MTQ4YjI0MTg3YjczNTI5">96c68a9<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
-<li>Fix post-meta position in scheme Mist (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9jOWNkZjFjNjk1ZmM3NjNiZTQxYTE2N2E2ZjA2MWEyMzNkNTFhNDE2">c9cdf1c<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix site-state-item padding (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC80YjhhMTdiOGU4MTk0NTA4YjMzYzhkMGVhN2I2NDY1NjgwMzBkNDEx">4b8a17b<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix: handle invalid config (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9kNTFjYTBlMmU4YzNjMTlhNGNkMGYwNmJmZDI0ZTg2ZTY2NDI1YThi">d51ca0e<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Use <code>textContent</code> instead of <code>innerText</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC81MjIzNGU1ZmRhZWI1OWVlNGMyZTI1ZTBkMjhhNzUzZTcwMTJiNTg5">52234e5<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Refactor sidebar-panel using flex layout (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9kNmYzNDRmZDlkMWY1YjlkMDBlNWEwZTAyNDkzODg5OTA3YmM5NTM4">d6f344f<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix serverURLs of Valine (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC85OTE5ZmI1YzQ5NTYzMTVlNTFkN2VlYWVjMzJhNDE2Zjc2YjA2ZWRi">9919fb5<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h2><ul>
-<li>Update dependency hexo to v5.2.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTEx">#111<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency husky to v4.3.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA3">#107<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency hexo-renderer-marked to v3.3.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvMTA1">#105<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency eslint to v7.10.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvOTk=">#99<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update _vendors.yml (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8zNWQxZTY4M2ZkZTZiMGEyZDAyNDJhYTVhYWI3MTBlNDI1NGY4MDY1">35d1e68<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjguMC4wLi4udjguMC4x">comparison between v8.0.0 and v8.0.1<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC4wLjE=">Detailed changes for NexT v8.0.1<i class="fa fa-external-link-alt"></i></span></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-8-0-0-released/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="阿飞">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阿飞的博客">
-      <meta itemprop="description" content="Talk is cheap. Show me the code.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 阿飞的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/next-8-0-0-released/" class="post-title-link" itemprop="url">NexT 8.0.0 Released</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2020-08-31 16:21:37" itemprop="dateCreated datePublished" datetime="2020-08-31T16:21:37Z">2020-08-31</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/next-8-0-0-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-8-0-0-released/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h2><ul>
-<li>Support reprint statement (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvODk=">#89<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor vendors (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI=">#72<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line"><span class="addition">+  # The default CDN provider of third-party plugins.</span></span><br><span class="line"><span class="addition">+  # Available values: local, jsdelivr, unpkg, cdnjs</span></span><br><span class="line"><span class="addition">+  # Dependencies for `plugins: local`: https://github.com/next-theme/plugins</span></span><br><span class="line"><span class="addition">+  plugins: jsdelivr</span></span><br></pre></td></tr></table></figure></li>
-<li>Image thumbnails in archive page (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC83YjkxZjhlZTc0ZWJkYjQxN2YyYjUwODk2MjIyNGIzZDY1M2FkNWNh">7b91f8e<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Rename <code>per_page</code> to <code>every_page</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9hM2RjYWM1ZjMzNGVkZGRlY2QzZGUxNzYxNzVjNTZkNDM3OWEwZjIx">a3dcac5<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">math:</span><br><span class="line"><span class="deletion">-  per_page: true</span></span><br><span class="line"><span class="addition">+  every_page: false</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
-<li>Fix pjax scroll restoration (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQ=">#74<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix .post-title-link position (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNzY=">#76<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix darkmode post-gallery image opacity (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8wNGNlZDE1ZDhhYWFhMjkyNWRhZDg3NThkZjcyODNkMzViOGRjYjA3">04ced15<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix id conflict with markdown headerlink (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC81MjNlMzllOWQ2NjliNzlhOWNkMGZiYjgyMzY2NmI4MGNjNjU2ZTFh">523e39e<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix .tabs-comment style (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC84ZDU3YjZkOTgwNjk2Nzc1ZjQxYTBmZDk0Zjc0MzRhNTg5Y2JkZTEx">8d57b6d<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix mermaid background color (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8zNzZkNzE4NzhmZjM3MjIyNmYxMGE0MGU4NzI2NmE3YTgyODNhYzdj">376d718<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix search result position (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9iYzg5OTMxNDUyYjZjNzAyMWFlYTg4NTYxN2VmNTUyN2Q3OGIxZGVm">bc89931<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
-<li>Optimize prism: support copy_button (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8wNGRhNzc5MjEyYmM3NjQ3YzkwYWQ0MDZjNjBlNmExMThhMGJhZWQ0">04da779<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor layout (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9mNzZjMGQ4YTk3OTEwMDk2ZjhlYmU0MDc1YmQ3MTliMzViMWY3Mzdj">f76c0d8<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize canonical URL (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8yMTlhZGZmZTEwYjQwYjRmNjUyZGUxNTM1ZGY0MDM3ZDBhYjJmODY5">219adff<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize Algolia Search (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC85MmJkYjMyYTI5NGQzZTE2MTE5MDk5ODMyOTMyZTc3Njk1MDliYjQ4">92bdb32<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor Gemini style (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8xOTE2MGI4YTE1YzRhMmM4ZTExMDk5M2UyNzFkMjg1Y2E2MDNmNjNm">19160b8<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Separate the styles of different schemes (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9iZGY1OWYxODdjYWQ4NjBhYWU2YWNiMTRhNWIwZWE5YWViZjJmM2Q4">bdf59f1<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactor post-footer using flex layout (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8yM2Q5MTYzYTJkYzJhMzI5YTZhMTUwZDBiZTNiYjUyOGQ4ZmQwOTZk">23d9163<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize figcaption style (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC85MGQwYTVmOTY2ZTA4ZGFkYTBkMTlkMTViYmJlNzM1OTIwOTQ3OGU1">90d0a5f<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize box-shadow of .site-brand-container (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC80MDJjMzRlOWJiZjE0YWVmOTU5MDVlYjMwNGIyYmU2N2NmMGUyZjlh">402c34e<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Optimize the path setting of LiveRe &amp; Valine (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC81ZTFiMGQwZThjMDk4NWM0YzRiYmUzZTczNzA3NTgxNDVmODBmYThl">5e1b0d0<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update ICP link (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvOTY=">#96<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Uniform hexadecimal color (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvOTM=">#93<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="🌀-External-Changes"><a href="#🌀-External-Changes" class="headerlink" title="🌀 External Changes"></a>🌀 External Changes</h2><ul>
-<li>Use @next-theme&#x2F;eslint-config (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9hOTZkMTEyNmE5NDE4ZTVmY2Y3NjNmYzIyYWJjNTZiYTU0NWZkZTBk">a96d112<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>CDN settings for Firebase (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC9lZTViNDFmNDFjNDAzODMyZjk4Zjc1Y2RiYzVkYmI0NjIzZDY4ZDBm">ee5b41f<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update MathJax CDN URL (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8wOWYwZjdiYTNkZGIxMmRiOThiZDM2ZWI3YzA4NjQ3ZWQwOGY1NWNj">09f0f7b<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency hexo-renderer-marked to v3.1.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvOTQ=">#94<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency hexo to v5.1.1 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvODU=">#85<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency mocha to v8.1.3 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvODI=">#82<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update dependency eslint to v7.7.0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvNjk=">#69<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update _vendors.yml (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC83ZTg0NThmZTE4ZDAzY2NkNjhmNWEzOWVjY2I1MzMxNjc4NmVjMGZj">7e8458f<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="📖-Documentation"><a href="#📖-Documentation" class="headerlink" title="📖 Documentation"></a>📖 Documentation</h2><ul>
-<li>Update docs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC83Y2Q4M2E0YjhjMGI0ZmYwZmMzZDk5MmIwNTQ5NjAwYTY0NDJlZmRj">7cd83a4<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Update docs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbW1pdC8xYmJlOGY0MTAxZDhlYjExOGI4NzA3NDU2YWM1MzVkNzFhMjA1NzM4">1bbe8f4<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="🌍-Localization"><a href="#🌍-Localization" class="headerlink" title="🌍 Localization"></a>🌍 Localization</h2><ul>
-<li>New Crowdin updates (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3B1bGwvOTE=">#91<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjguMC4wLXJjLjUuLi52OC4wLjA=">comparison between v8.0.0-rc.5 and v8.0.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25leHQtdGhlbWUvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92OC4wLjA=">Detailed changes for NexT v8.0.0<i class="fa fa-external-link-alt"></i></span></p>
 
       
     </div>

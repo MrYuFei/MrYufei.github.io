@@ -91,7 +91,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>首页</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-plugins"><a href="/plugins/" rel="section"><i class="fa fa-flask fa-fw"></i>Plugins</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">82</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">0</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">0</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>首页</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-plugins"><a href="/plugins/" rel="section"><i class="fa fa-flask fa-fw"></i>Plugins</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">84</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">0</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -156,9 +156,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">82</span>
+          <span class="site-state-item-count">84</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
 </div>
@@ -206,7 +211,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-7-0-0-released/">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2019/04/next-7-1-0-released/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -224,7 +229,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/next-7-0-0-released/" class="post-title-link" itemprop="url">NexT 7.0.0 Released</a>
+          <a href="/2019/04/next-7-1-0-released/" class="post-title-link" itemprop="url">NexT 7.1.0 Released</a>
         </h2>
 
         <div class="post-meta-container">
@@ -235,7 +240,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2019-02-01 14:25:34" itemprop="dateCreated datePublished" datetime="2019-02-01T14:25:34Z">2019-02-01</time>
+      <time title="创建时间：2019-04-01 11:19:46 11:19:46" itemprop="dateCreated datePublished" datetime="2019-04-01T11:19:46Z">2019-04-01 11:19:46</time>
     </span>
 
   
@@ -247,8 +252,291 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/next-7-0-0-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-7-0-0-released/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2019/04/next-7-1-0-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/next-7-1-0-released/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>Happy April Fools&#39; Day Guys \(^_^)&#x2F;</p>
+</blockquote>
+<h2 id="💥-Breaking-Changes"><a href="#💥-Breaking-Changes" class="headerlink" title="💥 Breaking Changes"></a>💥 Breaking Changes</h2><h3 id="Usage-of-quicklink-642"><a href="#Usage-of-quicklink-642" class="headerlink" title="Usage of quicklink (#642)"></a>Usage of <code>quicklink</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQy">#642<i class="fa fa-external-link-alt"></i></span>)</h3><ul>
+<li>Now quicklink will load on demand by default.</li>
+<li>Add <code>quicklink: true</code> in Front-matter for those pages or posts you want.</li>
+<li>Home page and archive page can be controlled through <code>home</code> and <code>archive</code> option.</li>
+</ul>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">quicklink:</span><br><span class="line">  enable: true</span><br><span class="line"><span class="deletion">- per_page: true</span></span><br><span class="line"><span class="addition">+ home: true # enable or disable quicklink on home page</span></span><br><span class="line"><span class="addition">+ archive: true # enable or disable quicklink on archive page</span></span><br><span class="line"># Add `quicklink: true` in Front-matter to enable quicklink on special page or post</span><br></pre></td></tr></table></figure>
+<h3 id="Some-options-look-more-uniform-in-config-yml-643"><a href="#Some-options-look-more-uniform-in-config-yml-643" class="headerlink" title="Some options look more uniform in _config.yml (#643)"></a>Some options look more uniform in <code>_config.yml</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQz">#643<i class="fa fa-external-link-alt"></i></span>)</h3><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">- #github_banner: https://github.com/yourname || Follow me on GitHub</span></span><br><span class="line"><span class="addition">+ github_banner:</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"><span class="addition">+  permalink: https://github.com/yourname</span></span><br><span class="line"><span class="addition">+  title: Follow me on GitHub</span></span><br><span class="line"></span><br><span class="line">post_meta:</span><br><span class="line">  updated_at:</span><br><span class="line"><span class="deletion">-    enabled: true</span></span><br><span class="line"><span class="addition">+    enable: true</span></span><br><span class="line"></span><br><span class="line">wechat_subscriber:</span><br><span class="line"><span class="deletion">-  #enabled: true</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"></span><br><span class="line">custom_logo:</span><br><span class="line"><span class="deletion">-  enabled: false</span></span><br><span class="line"><span class="addition">+  enable: false</span></span><br><span class="line"></span><br><span class="line"><span class="deletion">-cheers_enabled: true</span></span><br><span class="line"><span class="addition">+cheers: true</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Usage-of-back2top-button-657"><a href="#Usage-of-back2top-button-657" class="headerlink" title="Usage of back2top button (#657)"></a>Usage of <code>back2top</code> button (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjU3">#657<i class="fa fa-external-link-alt"></i></span>)</h3><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">sidebar:</span><br><span class="line"><span class="deletion">-  # Back to top in sidebar.</span></span><br><span class="line"><span class="deletion">-  b2t: false</span></span><br><span class="line"><span class="deletion">-  # Scroll percent label in b2t button.</span></span><br><span class="line"><span class="deletion">-  scrollpercent: false</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="addition">+back2top:</span></span><br><span class="line"><span class="addition">+  enable: true</span></span><br><span class="line"><span class="addition">+  # Back to top in sidebar.</span></span><br><span class="line"><span class="addition">+  sidebar: false</span></span><br><span class="line"><span class="addition">+  # Scroll percent label in b2t button.</span></span><br><span class="line"><span class="addition">+  scrollpercent: false</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="🌟-New-Features"><a href="#🌟-New-Features" class="headerlink" title="🌟 New Features"></a>🌟 New Features</h2><ul>
+<li>Range of font size and color to <code>tagcloud</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQ4">#648<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>New <code>video</code> and warn when use <code>exturl</code> or <code>extlink</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjUy">#652<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Mermaid (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQ5">#649<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Likely share (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjc4">#678<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Chatra and Tidio chats service (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjgx">#681<i class="fa fa-external-link-alt"></i></span>)</li>
+<li><code>safari_rainbow</code> and <code>custom_scrollbar</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjg2">#686<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>DisqusJS comment system (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzA1">#705<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="⭐-Features"><a href="#⭐-Features" class="headerlink" title="⭐ Features"></a>⭐ Features</h2><ul>
+<li>Load <code>quicklink</code> on demand (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjM3">#637<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Force language options to Gitalk comment system (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjUz">#653<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>New <code>pdf</code> tag (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjU5">#659<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Amount option to <code>tagcloud</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjYy">#662<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fancybox for group-picture and post-gallery (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY3">#667<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>English support for Valine comment system (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjc2">#676<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Expand all level option of post TOC (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjc5">#679<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Icon option to sidebar chat button (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjg4">#688<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>New <code>text_align</code> option (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjgy">#682<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Dynamic unlimited <code>reward</code> additions and <code>animation</code> option (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjk1">#695<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="🛠-Improvements"><a href="#🛠-Improvements" class="headerlink" title="🛠 Improvements"></a>🛠 Improvements</h2><ul>
+<li>Fix bootstrap filename (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQw">#640<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Change the spacing between sidebar elements (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjM4">#638<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Rename loader script for prevent wrong boostrap detection in Wappalyzer (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQx">#641<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update CDN url in <code>_config.yml</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY0">#664<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Remove <code>ua_parser</code> excess library (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjcx">#671<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Make a few documentational edits (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjcy">#672<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Move stylesheets from <code>.swig</code> to <code>.styl</code> files (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjgw">#680<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Remove unnecessary CSS prefix &amp; Update normalize.css (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjgz">#683<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Make <code>site-state-item</code> centered using <code>flex</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzAw">#700<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Refactor Mist &amp; Muse menu bar using <code>flex</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzAy">#702<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Remove <code>qihu_site_verification</code> and move some options to <code>SEO Settings</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzA2">#706<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Make CSS cleaner using <code>tablet-mobile()</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI0">#724<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Remove redundant styles (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI4">#728<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Make CSS simpler using macro (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzM4">#738<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Improve canonical path for vision in Google (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQ4">#748<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Merge note.styl and note-modern.styl (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzUw">#750<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Reduce the use of <code>!important</code> for GitHub banner (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQ0">#744<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>From now release drafts will maked automatically (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzY1">#765<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Improve console warning for non-supporting (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzY2">#766<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Change comparison for Release Drafter Bot</li>
+</ul>
+<h2 id="🐞-Bug-Fixes"><a href="#🐞-Bug-Fixes" class="headerlink" title="🐞 Bug Fixes"></a>🐞 Bug Fixes</h2><ul>
+<li>Diff code hightlight problem (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY1">#665<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Lost <code>tracking_id</code> in <code>google_analytics</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY4">#668<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>For long mathjax equations with short viewport horizontal scrollbar will appear (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY5">#669<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Colored link for modern notes with <code>exturl</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjg1">#685<i class="fa fa-external-link-alt"></i></span>)</li>
+<li><code>reward</code> button vertical align text (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjkz">#693<i class="fa fa-external-link-alt"></i></span>)</li>
+<li><code>back2top</code> button on mobile, sidebar item margin and sidebar <code>exturl</code> link color (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjg0">#684<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Right margin bug on mobile devices (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzA5">#709<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Typo in Baidu transformation in <code>_config.yml</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzE0">#714<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Sidebar button style on Pisces and Gemini (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzM1">#735<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Mathjax <code>li</code> style issue (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzUy">#752<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Remove <code>no-wrap</code> style from label tag (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzYz">#763<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Breadcrumbs now work with both <code>*.html</code> and <code>index.html</code> pages (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzY5">#769<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="📖-Documentation"><a href="#📖-Documentation" class="headerlink" title="📖 Documentation"></a>📖 Documentation</h2><ul>
+<li>Add more contributors to contributors list (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjM5">#639<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Make ISSUE and PR template more readable (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQ0">#644<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add CII badge. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI5">#729<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Move some docs from <code>_config.yml</code> to official website (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI1">#725<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update README.md, remove unused URLs (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzI3">#727<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add «Reporting Security Bugs» sections. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzMw">#730<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Change Riot chat link. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzMz">#733<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add stevenjoezhang as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQx">#741<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add «Thanks» section (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzM5">#739<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add 1v9 as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQy">#742<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add JiangTJ as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQz">#743<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Update labels and Chinese translation of CONTRIBUTING.md (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzQ3">#747<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add liolok as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzU1">#755<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Contributors per line: 6 instead of 7 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzU2">#756<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add ivan-nginx as a contributor (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzU3">#757<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Add <code>Improvement Need</code> label (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzY4">#768<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="🌍-Localization"><a href="#🌍-Localization" class="headerlink" title="🌍 Localization"></a>🌍 Localization</h2><ul>
+<li>New Crowdin translations (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjQ3">#647<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>New Crowdin translations (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjUw">#650<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<hr>
+<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjcuMC4xLi4udjcuMS4w">comparison between 7.0.1 and 7.1.0<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ny4xLjA=">Detailed changes for NexT v7.1.0<i class="fa fa-external-link-alt"></i></span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2019/03/next-7-0-1-released/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="阿飞">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿飞的博客">
+      <meta itemprop="description" content="Talk is cheap. Show me the code.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 阿飞的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/03/next-7-0-1-released/" class="post-title-link" itemprop="url">NexT 7.0.1 Released</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-01 05:27:11 05:27:11" itemprop="dateCreated datePublished" datetime="2019-03-01T05:27:11Z">2019-03-01 05:27:11</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2019/03/next-7-0-1-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/next-7-0-1-released/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
+<li>Added another code block copy button variant (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjMx">#631<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Added language option to creative_commons (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjI4">#628<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Added <code>quicklink</code> support (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjEy">#612<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjI1">#625<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Added sidebar auto close when click any blank part (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjA3">#607<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Added localhost filter for google analytics (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjE4">#618<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="Optimizations"><a href="#Optimizations" class="headerlink" title="Optimizations"></a>Optimizations</h2><ul>
+<li>Refactored code block copy (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjMy">#632<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Optimized the displaying of fancybox, mathjax and schedule (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjAz">#603<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Removed tinysou and duoshuo_share (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTY1">#565<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h2><ul>
+<li>Fixed <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTk0">#594<i class="fa fa-external-link-alt"></i></span>: External links didn&#39;t get replaced in index page (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTk5">#599<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjA5">#609<i class="fa fa-external-link-alt"></i></span>: Code block css style error (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjEw">#610<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjAx">#601<i class="fa fa-external-link-alt"></i></span>: Ordered list nested in unordered list became unordered (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjAy">#602<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTg3">#587<i class="fa fa-external-link-alt"></i></span>: Make Markdown table scrollable (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTk4">#598<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed comment count and reward QR (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTk1">#595<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<hr>
+<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjcuMC4wLi4udjcuMC4x">comparison between 7.0.0 and 7.0.1<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ny4wLjE=">Detailed changes for NexT v7.0.1<i class="fa fa-external-link-alt"></i></span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2019/02/next-7-0-0-released/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="阿飞">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿飞的博客">
+      <meta itemprop="description" content="Talk is cheap. Show me the code.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 阿飞的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/02/next-7-0-0-released/" class="post-title-link" itemprop="url">NexT 7.0.0 Released</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-02-01 14:25:34 14:25:34" itemprop="dateCreated datePublished" datetime="2019-02-01T14:25:34Z">2019-02-01 14:25:34</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2019/02/next-7-0-0-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/next-7-0-0-released/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -309,7 +597,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-v7-introduced/">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2019/01/next-v7-introduced/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -327,7 +615,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/next-v7-introduced/" class="post-title-link" itemprop="url">NexT v7 Introduced</a>
+          <a href="/2019/01/next-v7-introduced/" class="post-title-link" itemprop="url">NexT v7 Introduced</a>
         </h2>
 
         <div class="post-meta-container">
@@ -338,7 +626,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2019-01-05 09:57:00" itemprop="dateCreated datePublished" datetime="2019-01-05T09:57:00Z">2019-01-05</time>
+      <time title="创建时间：2019-01-05 09:57:00 09:57:00" itemprop="dateCreated datePublished" datetime="2019-01-05T09:57:00Z">2019-01-05 09:57:00</time>
     </span>
 
   
@@ -350,8 +638,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/next-v7-introduced/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-v7-introduced/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2019/01/next-v7-introduced/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/next-v7-introduced/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -401,256 +689,12 @@
 </ol>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/next-v7-introduced/#more" rel="contents">
+              <a class="btn" href="/2019/01/next-v7-introduced/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-6-7-0-released/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="阿飞">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阿飞的博客">
-      <meta itemprop="description" content="Talk is cheap. Show me the code.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 阿飞的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/next-6-7-0-released/" class="post-title-link" itemprop="url">NexT 6.7.0 Released</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2019-01-01 07:59:33" itemprop="dateCreated datePublished" datetime="2019-01-01T07:59:33Z">2019-01-01</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/next-6-7-0-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-6-7-0-released/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <blockquote>
-<p>\(^_^)&#x2F; Happy New Year!</p>
-</blockquote>
-<h2 id="Breaking-Changes"><a href="#Breaking-Changes" class="headerlink" title="Breaking Changes"></a>Breaking Changes</h2><h3 id="Rename-theme-vendors-Han-to-theme-vendors-han-512"><a href="#Rename-theme-vendors-Han-to-theme-vendors-han-512" class="headerlink" title="Rename theme.vendors.Han to theme.vendors.han (#512)"></a>Rename <code>theme.vendors.Han</code> to <code>theme.vendors.han</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTEy">#512<i class="fa fa-external-link-alt"></i></span>)</h3><h4 id="Old-configuration"><a href="#Old-configuration" class="headerlink" title="Old configuration:"></a>Old configuration:</h4><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">vendors:</span><br><span class="line">...</span><br><span class="line">  # Internal version: 3.3.0</span><br><span class="line">  # See: https://github.com/ethantw/Han</span><br><span class="line"><span class="deletion">- Han:</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="New-configuration"><a href="#New-configuration" class="headerlink" title="New configuration:"></a>New configuration:</h4><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line">  <span class="comment"># Internal version: 3.3.0</span></span><br><span class="line">  <span class="comment"># See: https://github.com/ethantw/Han</span></span><br><span class="line">  <span class="comment"># Example:</span></span><br><span class="line">  <span class="comment"># han: //cdn.jsdelivr.net/npm/han-css@3/dist/han.min.css</span></span><br><span class="line">  <span class="comment"># han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css</span></span><br><span class="line">  <span class="attr">han:</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTUz">#553<i class="fa fa-external-link-alt"></i></span> New Feature: mhchem support (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTU0">#554<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Format code &amp; update CDN URLs &amp; fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMjY5">#269<i class="fa fa-external-link-alt"></i></span> (copy_tex for KaTeX) (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTQz">#543<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add toc max_depth support (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTI4">#528<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Reorganize <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMjc0">#274<i class="fa fa-external-link-alt"></i></span> Custom logo for Gemini &amp; Pisces (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTIw">#520<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Added <code>post_edit</code> option on pages &amp; Maked some refactoring. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDk5">#499<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="Optimizations"><a href="#Optimizations" class="headerlink" title="Optimizations"></a>Optimizations</h2><ul>
-<li>Updated site link &amp; small corrections. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTE4">#518<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Refactored post navigation styles. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTA5">#509<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Conditional import Han style. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTA3">#507<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h2><ul>
-<li>Bug fix in scripts&#x2F;tags&#x2F;tabs.js (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTU4">#558<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fixed b2t to work on all schemes (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTUy">#552<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDg=">#48<i class="fa fa-external-link-alt"></i></span> Footer position (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTUw">#550<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDgx">#481<i class="fa fa-external-link-alt"></i></span> Google Calendar (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTQ5">#549<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTA4">#508<i class="fa fa-external-link-alt"></i></span> Reward comment position bug (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTQ2">#546<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMjcx">#271<i class="fa fa-external-link-alt"></i></span> CDN URL for leancloud (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTQx">#541<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix localsearch wrong article url (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTQw">#540<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTM3">#537<i class="fa fa-external-link-alt"></i></span> The algolia search pagination&#39;s opacity is 0 (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTM4">#538<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMTgx">#181<i class="fa fa-external-link-alt"></i></span> and <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzMz">#333<i class="fa fa-external-link-alt"></i></span> Right margin bug in mobile style (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTM0">#534<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTMx">#531<i class="fa fa-external-link-alt"></i></span>, format code in _config.yml (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTMy">#532<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix for metadata generation at index (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTI5">#529<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix inline code font-size mismatch within headers (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTE0">#514<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzY0">#364<i class="fa fa-external-link-alt"></i></span> Copy code on mobile platform (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDg5">#489<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fixed Disqus URL. Again. A little bit hard. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTA2">#506<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fixed Disqus bug if in permalink exists symbol «&#39;» . (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTA0">#504<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fixed W3 validator errors. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTAx">#501<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Added <code>disable_baidu_transformation</code> option. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTAw">#500<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fixed sidebar under Pisces &#x2F; Gemini schemes for IE 11. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDk4">#498<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix submenu when path name is same (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDk3">#497<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Menu external url (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDc2">#476<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDk1">#495<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDcz">#473<i class="fa fa-external-link-alt"></i></span> and <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMjMx">#231<i class="fa fa-external-link-alt"></i></span> <code>url_for()</code> misuse (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDk2">#496<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Improve highlighting for Lisps (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDkz">#493<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Define &quot;builtin-name&quot; for Lisp languages (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDky">#492<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjYuNi4wLi4udjYuNy4w">comparison between 6.6.0 and 6.7.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni43LjA=">Detailed changes for NexT v6.7.0<i class="fa fa-external-link-alt"></i></span></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-6-6-0-released/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="阿飞">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阿飞的博客">
-      <meta itemprop="description" content="Talk is cheap. Show me the code.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 阿飞的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/next-6-6-0-released/" class="post-title-link" itemprop="url">NexT 6.6.0 Released</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2018-12-01 10:01:55" itemprop="dateCreated datePublished" datetime="2018-12-01T10:01:55Z">2018-12-01</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/next-6-6-0-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-6-6-0-released/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Breaking-Changes"><a href="#Breaking-Changes" class="headerlink" title="Breaking Changes"></a>Breaking Changes</h2><h3 id="Refactored-Creative-Commons-copyright-463"><a href="#Refactored-Creative-Commons-copyright-463" class="headerlink" title="Refactored Creative Commons copyright (#463)"></a>Refactored Creative Commons copyright (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDYz">#463<i class="fa fa-external-link-alt"></i></span>)</h3><p>Joined <code>post_copyright</code> and <code>creative_commons</code> options into one.</p>
-<h4 id="Old-configuration"><a href="#Old-configuration" class="headerlink" title="Old configuration:"></a>Old configuration:</h4><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# Creative Commons 4.0 International License.</span></span><br><span class="line"><span class="deletion">-# http://creativecommons.org/</span></span><br><span class="line"><span class="deletion">-# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero</span></span><br><span class="line"><span class="deletion">-#creative_commons: by-nc-sa</span></span><br><span class="line"><span class="deletion">-#creative_commons:</span></span><br><span class="line"></span><br><span class="line"><span class="deletion">-# Declare license on posts</span></span><br><span class="line"><span class="deletion">-post_copyright:</span></span><br><span class="line"><span class="deletion">-  enable: false</span></span><br><span class="line"><span class="deletion">-  license: &lt;a href=&quot;https://creativecommons.org/licenses/by-nc-sa/4.0/&quot; rel=&quot;external nofollow&quot; target=&quot;_blank&quot;&gt;CC BY-NC-SA 4.0&lt;/a&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="New-configuration"><a href="#New-configuration" class="headerlink" title="New configuration:"></a>New configuration:</h4><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Creative Commons 4.0 International License.</span></span><br><span class="line"><span class="comment"># https://creativecommons.org/share-your-work/licensing-types-examples/</span></span><br><span class="line"><span class="comment"># Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero</span></span><br><span class="line"><span class="attr">creative_commons:</span></span><br><span class="line">  <span class="attr">license:</span> <span class="string">by-nc-sa</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">post:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Global-improvement-for-ExtURL-463"><a href="#Global-improvement-for-ExtURL-463" class="headerlink" title="Global improvement for ExtURL (#463)"></a>Global improvement for ExtURL (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDYz">#463<i class="fa fa-external-link-alt"></i></span>)</h3><p>From now no need to use <code>exturl</code> tag – all external links will be automatically replaced in posts (and in templates) with spanned links if <code>exturl</code> option will be enabled.</p>
-<h4 id="Old-configuration-1"><a href="#Old-configuration-1" class="headerlink" title="Old configuration:"></a>Old configuration:</h4><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"> social_icons:</span><br><span class="line">  enable: true</span><br><span class="line">  icons_only: false</span><br><span class="line">  transition: false</span><br><span class="line"><span class="deletion">- # Dependencies: exturl: true in Tags Settings section below.</span></span><br><span class="line"><span class="deletion">- # To encrypt links above use https://www.base64encode.org</span></span><br><span class="line"><span class="deletion">- # Example encoded link: `GitHub: aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQ= || github`</span></span><br><span class="line"><span class="deletion">- exturl: false</span></span><br><span class="line"></span><br><span class="line"><span class="deletion">-# External URL with BASE64 encrypt &amp; decrypt.</span></span><br><span class="line"><span class="deletion">-exturl: false</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="New-configuration-1"><a href="#New-configuration-1" class="headerlink" title="New configuration:"></a>New configuration:</h4><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Automatically add external URL with BASE64 encrypt &amp; decrypt.</span></span><br><span class="line"><span class="attr">exturl:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Reward-be-more-intelligent-related-issue-280-465"><a href="#Reward-be-more-intelligent-related-issue-280-465" class="headerlink" title="Reward be more intelligent, related issue #280 (#465)"></a>Reward be more intelligent, related issue <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMjgw">#280<i class="fa fa-external-link-alt"></i></span> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDY1">#465<i class="fa fa-external-link-alt"></i></span>)</h3><h4 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use?"></a>How to use?</h4><p>In NexT _config.yml:</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Reward</span></span><br><span class="line"><span class="comment"># If true, reward would be displayed in every article by default.</span></span><br><span class="line"><span class="comment"># And you can show or hide one article specially through add page variable `reward: true/false`.</span></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment">#comment: Donate comment here</span></span><br><span class="line">  <span class="comment">#wechatpay: /images/wechatpay.jpg</span></span><br><span class="line">  <span class="comment">#alipay: /images/alipay.jpg</span></span><br><span class="line">  <span class="comment">#bitcoin: /images/bitcoin.png</span></span><br></pre></td></tr></table></figure>
-
-<p>Or special config in .md:</p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">title-name</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2018-11-05</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">reward:</span> <span class="literal">true</span><span class="string">/false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
-<li>Add gitalk comment system (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDY0">#464<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add PDFObject and PDF.js support (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDY2">#466<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="Optimizations"><a href="#Optimizations" class="headerlink" title="Optimizations"></a>Optimizations</h2><ul>
-<li>Format code in _config.yml (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDY5">#469<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Format code &amp; change default CDN for pdfobject (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDcw">#470<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Add enable option for <code>read_more_btn</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDQ2">#446<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<h2 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h2><ul>
-<li>Fix the error when the Chinese is included in the hash (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDUy">#452<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix images in an anchor being wrapped as fancybox <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzk5">#399<i class="fa fa-external-link-alt"></i></span> and <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzk0">#394<i class="fa fa-external-link-alt"></i></span> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDY4">#468<i class="fa fa-external-link-alt"></i></span>)</li>
-<li>Fix mathjax overflow (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDg4">#488<i class="fa fa-external-link-alt"></i></span>)</li>
-</ul>
-<hr>
-<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjYuNS4wLi4udjYuNi4w">comparison between 6.5.0 and 6.6.0<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni42LjA=">Detailed changes for NexT v6.6.0<i class="fa fa-external-link-alt"></i></span></p>
-
       
     </div>
 

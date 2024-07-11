@@ -91,7 +91,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>首页</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-plugins"><a href="/plugins/" rel="section"><i class="fa fa-flask fa-fw"></i>Plugins</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">82</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">0</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">0</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-bell fa-fw"></i>首页</a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li><li class="menu-item menu-item-plugins"><a href="/plugins/" rel="section"><i class="fa fa-flask fa-fw"></i>Plugins</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">84</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">0</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -156,9 +156,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">82</span>
+          <span class="site-state-item-count">84</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
 </div>
@@ -206,7 +211,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-6-0-1-released/">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2018/01/next-6-0-3-released/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -224,7 +229,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/next-6-0-1-released/" class="post-title-link" itemprop="url">NexT 6.0.1 Released</a>
+          <a href="/2018/01/next-6-0-3-released/" class="post-title-link" itemprop="url">NexT 6.0.3 Released</a>
         </h2>
 
         <div class="post-meta-container">
@@ -235,7 +240,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2018-01-10 16:13:05" itemprop="dateCreated datePublished" datetime="2018-01-10T16:13:05Z">2018-01-10</time>
+      <time title="创建时间：2018-01-30 04:55:20 04:55:20" itemprop="dateCreated datePublished" datetime="2018-01-30T04:55:20Z">2018-01-30 04:55:20</time>
     </span>
 
   
@@ -247,8 +252,233 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/next-6-0-1-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-6-0-1-released/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2018/01/next-6-0-3-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/01/next-6-0-3-released/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Breaking-Changes"><a href="#Breaking-Changes" class="headerlink" title="Breaking Changes"></a>Breaking Changes</h2><h3 id="Rename-some-language-code"><a href="#Rename-some-language-code" class="headerlink" title="Rename some language code"></a>Rename some language code</h3><p>Please change your <code>hexo/_config.yml</code>:</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">&lt;new</span> <span class="string">language-code&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>zh-Hans</code> to <code>zh-CN</code> for better compatability. (<span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0L2UxZTZjZjhmZTBlMGI2ZjIyZmVkMjJlNzY2MDE5YmU3NGY4M2RlNWQ=">e1e6cf8<i class="fa fa-external-link-alt"></i></span>)</li>
+<li><code>fr-FR</code> and <code>nl-NL</code> to <code>fr</code> and <code>nl</code>. (<span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0L2VlOTE1NzMxZGM0NWUyNmI0ZmE4YTYyM2E4NjRmOGJmYjMxYmYzZmU=">ee91573<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0L2VjNWU5ZGI3ODU5MDQ4NDIyN2M1YmQ5YWYwMjZjMjNhNjVjNmM3MzY=">ec5e9db<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h3 id="Refactored-license-content-Fixed-excess-spaces-4003a0e"><a href="#Refactored-license-content-Fixed-excess-spaces-4003a0e" class="headerlink" title="Refactored license_content &amp; Fixed excess spaces. (4003a0e)"></a>Refactored <code>license_content</code> &amp; Fixed excess spaces. (<span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzQwMDNhMGVhMGUzNjRhMDkwODc1YmIyYmMwMjRiYTNlYjUxZWY0Y2E=">4003a0e<i class="fa fa-external-link-alt"></i></span>)</h3><h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
+<li>Added: Bookmark feature (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjM=">#63<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">bookmark:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">save:</span> <span class="string">auto</span> <span class="comment"># or manual</span></span><br></pre></td></tr></table></figure></li>
+<li>Added a switch to choice whether it will unescape the HTML strings for local searching (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvOTA=">#90<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line">  <span class="comment"># unescape html strings to the readable one</span></span><br><span class="line">  <span class="attr">unescape:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li>Added: Support to set whether the sidebar will be shown in each single post. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvOTM=">#93<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line">date: 2018-01-28 21:16:00</span><br><span class="line"><span class="section">sidebar: false</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br><span class="line">...</span><br></pre></td></tr></table></figure></li>
+<li>Added docs of Algolia search (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvOTE=">#91<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="Optimizations"><a href="#Optimizations" class="headerlink" title="Optimizations"></a>Optimizations</h2><ul>
+<li>Updated: Rename <code>en.yml</code> on <code>_en.yml</code> to set undefined language as default.<br>If language file will not find by Hexo, Hexo will use first finded language (_en.yml). (<span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzAzZTM1N2I1MTgxZjhkOGYyNWM1NTE5ZDA0MTc4NzIzZDAyZDAyMGQ=">03e357b<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Updated: Rename «Words count in article» on «Symbols count in article». (<span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzlkNDY3MzNlMmY5Yjc3NmRmZTFiYWI1ZTY1YmUwOTM3ZGQ0Y2E1Yjg=">9d46733<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Updated translation for the core languages.</li>
+<li>Updated <code>math.per_page</code> to default <code>true</code> to make math lazyloaded. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNjY=">#66<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Updated: Add more seo things. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvODU=">#85<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h2><ul>
+<li>Fixed a little mistakes in <code>MATH.md</code> docs file. (<span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0L2EzYTIzMjE3NzFlOTJjNjA3NjYyMTRmOTIyYjIyYzIwNTIwZTBhNTg=">a3a2321<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzY1ODJkNzU1ZWZhZjAyZmM0ZTgxMDcxODI3ZGY0YzU4YWY4NDJmODk=">6582d75<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0Lzc5NTgyZWQ0NzY4MTMzZWYyODZjYTA2ZjlhNzgxMzM5NzYyMzU3YmE=">79582ed<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed: Math script loaded in tags and archives pages (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNzg=">#78<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvODE=">#81<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed the exists categories&#x2F;tags count issue in the sidebar. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvODc=">#87<i class="fa fa-external-link-alt"></i></span>, addition fix to <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDI=">#42<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed an issue about the algolia search overlay. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvODk=">#89<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<hr>
+<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjYuMC4yLi4udjYuMC4z">comparison between 6.0.2 and 6.0.3<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni4wLjM=">Detailed changes for NexT v6.0.3<i class="fa fa-external-link-alt"></i></span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2018/01/next-6-0-2-released/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="阿飞">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿飞的博客">
+      <meta itemprop="description" content="Talk is cheap. Show me the code.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 阿飞的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/01/next-6-0-2-released/" class="post-title-link" itemprop="url">NexT 6.0.2 Released</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-01-20 16:46:25 16:46:25" itemprop="dateCreated datePublished" datetime="2018-01-20T16:46:25Z">2018-01-20 16:46:25</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2018/01/next-6-0-2-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/01/next-6-0-2-released/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Breaking-changes"><a href="#Breaking-changes" class="headerlink" title="Breaking changes"></a>Breaking changes</h2><h3 id="MathJax-32-See-docs-for-details"><a href="#MathJax-32-See-docs-for-details" class="headerlink" title="MathJax (#32) [See docs for details]"></a>MathJax (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzI=">#32<i class="fa fa-external-link-alt"></i></span>) [See <a href="/docs/third-party-services/math-equations.html">docs</a> for details]</h3><h4 id="Old-configuration"><a href="#Old-configuration" class="headerlink" title="Old configuration:"></a>Old configuration:</h4><figure class="highlight diff"><table><tr><td class="code"><pre><span class="line"><span class="deletion">-# MathJax Support</span></span><br><span class="line"><span class="deletion">-mathjax:</span></span><br><span class="line"><span class="deletion">-  enable: false</span></span><br><span class="line"><span class="deletion">-  per_page: false</span></span><br><span class="line"><span class="deletion">- cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="New-configuration"><a href="#New-configuration" class="headerlink" title="New configuration:"></a>New configuration:</h4><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Math Equations Render Support</span></span><br><span class="line"><span class="attr">math:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Default(false) will load mathjax/katex script EVERY PAGE</span></span><br><span class="line">  <span class="comment"># If you set to true, you need to add &#x27;mathjax: true&#x27; in Front Matter of post</span></span><br><span class="line">  <span class="comment"># in order to render math equations in post</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">engine:</span> <span class="string">mathjax</span></span><br><span class="line">  <span class="comment">#engine: katex</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.</span></span><br><span class="line">  <span class="attr">mathjax:</span></span><br><span class="line">    <span class="comment"># For newMathJax CDN (cdnjs.cloudflare.com) with fallback to oldMathJax (cdn.mathjax.org).</span></span><br><span class="line">    <span class="attr">cdn:</span> <span class="string">//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span></span><br><span class="line">    <span class="comment"># For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).</span></span><br><span class="line">    <span class="comment">#cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML</span></span><br><span class="line">    <span class="comment"># For automatic detect latest version link to MathJax.js and get from CloudFlare.</span></span><br><span class="line">    <span class="comment">#cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)</span></span><br><span class="line">  <span class="comment"># needed to full Katex support.</span></span><br><span class="line">  <span class="attr">katex:</span></span><br><span class="line">    <span class="comment"># Use Katex 0.7.1 as default</span></span><br><span class="line">    <span class="attr">cdn:</span> <span class="string">//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css</span></span><br><span class="line">    <span class="comment"># If you want to try the latest version of Katex, use one below instead</span></span><br><span class="line">    <span class="comment">#cdn: //cdn.jsdelivr.net/katex/latest/katex.min.css</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
+<li>Added <code>katex</code> support (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzI=">#32<i class="fa fa-external-link-alt"></i></span>) (See breaking changes above)</li>
+<li>Added: Support to lazy load the disqus comments (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzQ=">#34<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">disqus:</span></span><br><span class="line">  <span class="attr">lazyload:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li>Added <code>cheers_enabled</code> config option (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDM=">#43<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enable &quot;cheers&quot; for archive page.</span></span><br><span class="line"><span class="attr">cheers_enabled:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li>Added <code>pangu.js</code> instead of auto_spacing in hexo (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTE=">#51<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTY=">#56<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Pangu Support</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-pangu</span></span><br><span class="line"><span class="comment"># For more information: https://github.com/vinta/pangu.js</span></span><br><span class="line"><span class="attr">pangu:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li>Added <code>updated_diff</code> option to <code>post_meta</code> (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTA=">#50<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">post_meta:</span></span><br><span class="line">  <span class="attr">created_at:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">updated_at:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">updated_diff:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li>Added: Load custom files from outside the theme (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzE=">#31<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0L2Y5NjhmZmMxZjRlNjhkYTUzZmYxOTliZTZmZWE0YjUxOThmZjQzNjc=">f968ffc<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzEyZmUxMzExNTkwODllMGRjMGUyNjI1MWIyN2YzZDJmNzVkNDY5NDA=">12fe131<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzFjYjRkMDg2YmQzMWMwNjE3NjRjZWFkZGRjODJhNzI5ZTRkYzNmZDU=">1cb4d08<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0Lzg3NDQyMzhjYzU3NGUyYjNlOWMzMzQzMzBhYTVmNGE3ZDg2M2FmOTY=">8744238<i class="fa fa-external-link-alt"></i></span>)<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Redefine custom file paths. Introduced in NexT v6.0.2.</span></span><br><span class="line"><span class="comment"># If commented, will be used default custom file paths.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># For example, you want to put your custom styles file</span></span><br><span class="line"><span class="comment"># outside theme directory in root `source/_data`, set</span></span><br><span class="line"><span class="comment"># `styles: source/_data/styles.styl`</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="attr">header:</span> <span class="string">source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">styles:</span> <span class="string">source/_data/styles.styl</span></span><br><span class="line">  <span class="comment">#mixins: source/_data/mixins.styl</span></span><br><span class="line">  <span class="attr">variables:</span> <span class="string">source/_data/variables.styl</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="Optimizations"><a href="#Optimizations" class="headerlink" title="Optimizations"></a>Optimizations</h2><ul>
+<li>Updated google-analytics.swig (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDU=">#45<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Updated translation for the DATA-FILES.md changes. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDc=">#47<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Updated <code>&lt;img src=&quot;/image-url&quot; class=&quot;full-image&quot; /&gt;</code> BUG (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTI=">#52<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzVhNzBmZDMyYzU1NjU3NzFlOTNkZTVjMzY0YjQ1OTZjNWExOTdlMDc=">5a70fd3<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<h2 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h2><ul>
+<li>Fixed misleading description of gitment (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMjI=">#22<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed: move needmoreshare_css to head (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMjY=">#26<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed: Turn OFF javascript with motion enable result in a blank page [fix added] (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMjc=">#27<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0L2QyYmU0ZmFkZTFmYzY4MTgzNzM0NjNjZjNhNmUzMWU4MjkzNWI0NTM=">d2be4fa<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed a position bug of the github_banner on the mobile layout. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMjk=">#29<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzMzMzdiNTA1NzRmOTMzNGVlOTEyNDEzNWQ2ZmFkOTBiZmQxZTA1YjM=">3337b50<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed underlined category under title ends in an extra blank [fix added] (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzY=">#36<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzA4ZDM1YmUxYzkyYjQ1OTZlNmEzYzY3MmRjYjBjMGZiMzIwODhhMzE=">08d35be<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed: Add comment.enable to switch comment conveniently (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvMzk=">#39<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed: <code>&lt;link rel=&quot;canonical&quot; href=&quot;URL&quot;/&gt;</code> is wrong! [fix added] (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDA=">#40<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0L2JhZDQzMzQ3NWEzY2RjYzQyMDgwN2FjODAwOGE1MDE4NTU4ZTA2MjI=">bad4334<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed an issue about the categories&#x2F;tags count. (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDI=">#42<i class="fa fa-external-link-alt"></i></span>)</li>
+<li><strong>Fixed</strong>: Override theme&#39;s <code>scheme</code> from main config [fix added] (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNDQ=">#44<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cDovL2dpdGh1Yi5jb20vdGhlbWUtbmV4dC9oZXhvLXRoZW1lLW5leHQvY29tbWl0LzFiMGI1M2EzNTUxODRkYjY1YjJmMTkzNDljN2IxMzcyZjE4MjUxNzQ=">1b0b53a<i class="fa fa-external-link-alt"></i></span>)</li>
+<li>Fixed <code>reading_progress</code> appear in index (<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3B1bGwvNTU=">#55<i class="fa fa-external-link-alt"></i></span>)</li>
+</ul>
+<hr>
+<p>For full changes, see the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L2NvbXBhcmUvdjYuMC4xLi4udjYuMC4y">comparison between 6.0.1 and 6.0.2<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RoZW1lLW5leHQvaGV4by10aGVtZS1uZXh0L3JlbGVhc2VzL3RhZy92Ni4wLjI=">Detailed changes for NexT v6.0.2<i class="fa fa-external-link-alt"></i></span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2018/01/next-6-0-1-released/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="阿飞">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿飞的博客">
+      <meta itemprop="description" content="Talk is cheap. Show me the code.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 阿飞的博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/01/next-6-0-1-released/" class="post-title-link" itemprop="url">NexT 6.0.1 Released</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-01-10 16:13:05 16:13:05" itemprop="dateCreated datePublished" datetime="2018-01-10T16:13:05Z">2018-01-10 16:13:05</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2018/01/next-6-0-1-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/01/next-6-0-1-released/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -313,7 +543,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/next-6-0-0-released/">
+    <link itemprop="mainEntityOfPage" href="https://strongyf.github.io/2018/01/next-6-0-0-released/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -331,7 +561,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/next-6-0-0-released/" class="post-title-link" itemprop="url">NexT 6.0.0 Released</a>
+          <a href="/2018/01/next-6-0-0-released/" class="post-title-link" itemprop="url">NexT 6.0.0 Released</a>
         </h2>
 
         <div class="post-meta-container">
@@ -342,7 +572,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2018-01-02 14:49:45" itemprop="dateCreated datePublished" datetime="2018-01-02T14:49:45Z">2018-01-02</time>
+      <time title="创建时间：2018-01-02 14:49:45 14:49:45" itemprop="dateCreated datePublished" datetime="2018-01-02T14:49:45Z">2018-01-02 14:49:45</time>
     </span>
 
   
@@ -354,8 +584,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/next-6-0-0-released/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="next-6-0-0-released/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2018/01/next-6-0-0-released/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/01/next-6-0-0-released/" itemprop="commentCount"></span>
     </a>
   </span>
   
